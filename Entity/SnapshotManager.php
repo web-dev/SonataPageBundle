@@ -398,7 +398,7 @@ class SnapshotManager implements SnapshotManagerInterface
     public function getTemplate($code)
     {
         if (!isset($this->templates[$code])) {
-            throw new \RunTimeException(sprintf('No template references whith the code : %s', $code));
+            throw new \RunTimeException(sprintf('No template references with the code : %s', $code));
         }
 
         return $this->templates[$code];
